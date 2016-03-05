@@ -13,6 +13,9 @@
             android:text="Username" >
         </TextView>
 
+        <!-- the trick here is to set the edittext
+        layout_with to 0dp, this will make sure it will
+        take as much space as is available -->
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -42,11 +45,14 @@
         </EditText>
     </TableRow>
 
+
+    <!-- the gravity="center" aligns this in the center -->
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center" >
 
+        <!-- the layout_span makes sure this will fill two columns -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,9 +61,10 @@
         </Button>
     </TableRow>
 
+    <!-- here no gravity center -->
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
 
